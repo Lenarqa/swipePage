@@ -92,10 +92,10 @@
     content: '';
     position: relative;
     background-color: #000;
+    rotate: 180deg;
     height: 30px;
     width: 50px;
     margin: 0 auto;
-    transform: rotate(180deg);
     animation: arrowAnim 2s linear infinite;
     -webkit-animation: arrowAnim 2s linear infinite;
     -moz-animation: arrowAnim 2s linear infinite;
