@@ -111,6 +111,7 @@
     border-left: 30px solid #000; 
     top:50%;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     right: -100%;
     opacity: 1;
     box-shadow: 0;
@@ -118,9 +119,18 @@
 
 /* animation */
 @keyframes arrowAnim{
-    0%{scale: 1;}
-    50%{scale: 1.5;}
-    100%{scale: 1;}
+    0%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
 }
 
 
