@@ -97,16 +97,15 @@
     margin: 0 auto;
     transform: rotate(180deg);
     animation: arrowAnim 2s linear infinite;
+    -webkit-animation: arrowAnim 2s linear infinite;
+    -moz-animation: arrowAnim 2s linear infinite;
     margin-bottom: 20px;
 }
 
 .page-2-arrow:after{
-    /* font-size: 0; */
     position: absolute;
     content:"";
     border: 30px solid transparent;
-    /* border-top: 30px solid transparent;
-    border-right: 30px solid transparent; */
     border-bottom: 28px solid transparent;
     border-left: 30px solid #000; 
     top:50%;
