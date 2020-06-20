@@ -92,7 +92,6 @@
     content: '';
     position: relative;
     background-color: #000;
-    rotate: 180deg;
     height: 30px;
     width: 50px;
     margin: 0 auto;
@@ -107,11 +106,12 @@
     content:"";
     border: 30px solid transparent;
     border-bottom: 28px solid transparent;
-    border-left: 30px solid #000; 
+    border-right: 30px solid #000; 
     top:50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    right: -100%;
+    /* right: -100%; */
+    left: -100%;
     opacity: 1;
     box-shadow: 0;
 }
