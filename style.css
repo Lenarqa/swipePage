@@ -1,28 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .page-1{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: grey;
+    background-color: #000;
     width: 100vw;
     height: 100vh;
 }
 
 .page-2{
-    
     display: none;
     position: absolute;
     top: 0;
     left: 100%;
-    background-color: yellowgreen;
+    background-color: #fff;
     width: 100vw;
     height: 100vh;
 }
 
 .page-content{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
+
+.page-item{
+    height: 33%;
+}
+
+/* page 1 */
+.page-1-title{
+    font-size: 62px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.page-1-text{
+    font-size: 30px;
+    color: #fff;
+}
+
+.page-1-arrow{
+    display: block;
+    content: '';
+    position: relative;
+    background-color: #fff;
+    height: 30px;
+    width: 50px;
+    margin: 0 auto;
+    animation: arrowAnim 2s linear infinite;
+    margin-bottom: 20px;
+}
+
+.page-1-arrow:after{
+    /* font-size: 0; */
+    position: absolute;
+    content:"";
+    border: 30px solid transparent;
+    /* border-top: 30px solid transparent;
+    border-right: 30px solid transparent; */
+    border-bottom: 28px solid transparent;
+    border-left: 30px solid #fff; 
+    top:50%;
+    transform: translateY(-50%);
+    right: -100%;
+    opacity: 1;
+    box-shadow: 0;
+}
+
+/* page 2 */
+.page-2-title{
+    font-size: 62px;
+    text-transform: uppercase;
+}
+
+.page-2-text{
+    font-size: 30px;
+}
+
+.page-2-arrow{
+    display: block;
+    content: '';
+    position: relative;
+    background-color: #000;
+    height: 30px;
+    width: 50px;
+    margin: 0 auto;
+    transform: rotate(180deg);
+    animation: arrowAnim 2s linear infinite;
+    margin-bottom: 20px;
+}
+
+.page-2-arrow:after{
+    /* font-size: 0; */
+    position: absolute;
+    content:"";
+    border: 30px solid transparent;
+    /* border-top: 30px solid transparent;
+    border-right: 30px solid transparent; */
+    border-bottom: 28px solid transparent;
+    border-left: 30px solid #000; 
+    top:50%;
+    transform: translateY(-50%);
+    right: -100%;
+    opacity: 1;
+    box-shadow: 0;
+}
+
+/* animation */
+@keyframes arrowAnim{
+    0%{scale: 1;}
+    50%{scale: 1.5;}
+    100%{scale: 1;}
+}
+
 
