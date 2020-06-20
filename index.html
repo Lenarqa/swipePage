@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Swipe Pages</title>
+</head>
+<body>
+    <div class="page-1" id="page1" ontouchstart="p1TouchStart(event)" ontouchmove="p1TouchMove(event)" ontouchend="p1TouchEnd(event)">
+        <div class="page-content">
+            <h1>Page 1</h1>
+        </div> 
+    </div>
+
+    <div class="page-2"  id="page2" ontouchstart="p2TouchStart(event)" ontouchmove="p2TouchMove(event)" ontouchend="p2TouchEnd(event)">
+        <div class="page-content">
+            <h1>Page 2</h1>
+        </div> 
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
